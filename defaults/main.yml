@@ -1,0 +1,16 @@
+---
+nfs_exports: ["/opt/vcloudx *(rw,sync,no_root_squash)"]
+
+nfs_rpcbind_state: started
+nfs_rpcbind_enabled: true
+
+nfsmounts:
+      - {  path: "/opt/vcloudx/etc/sslcerts" }
+      - {  path: "/opt/vcloudx/etc/configs" }
+      - {  path: "/opt/vcloudx/etc/configs" }
+      - {  path: "/opt/vcloudx/dataStore/SG" }
+      - {  path: "/opt/vcloudx/dataStore/IN" }
+      - {  path: "/opt/vcloudx/dataStore/US" }
+
+group: svcvplatx
+username: svcvplatx
